@@ -22,7 +22,7 @@ public class iOSDevice {
 		capabilities.setCapability("bundleId", "com.example.apple-samplecode.UICatalog");
 		capabilities.setCapability("app", "/App/UICatalog-iphonesimulator.app");
 		capabilities.setCapability("AUTOMATION_NAME", "XCUITest");
-		capabilities.setCapability("useNewWDA", "true");
+		capabilities.setCapability("useNewWDA", "false");
 
 		driver = new IOSDriver<>(new URL("http://localhost:4723/wd/hub"), capabilities);
 		return driver;
